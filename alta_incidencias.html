@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alta de Incidencias</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Alta de Incidencias</h2>
+        <form action="gestion_incidencias.html" method="post">
+            <label for="numero_incidencia">Nº Incidencia:</label>
+            <textarea type="text" id="numero_incidencia" name="numero_incidencia"></textarea>
+
+            <label for="fecha">Fecha:</label>
+            <textarea type="text" id="fecha" name="fecha"></textarea>
+            <label for="descripcion">Descripción de la Incidencia:</label>
+            <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+
+            <label for="tipo_incidencia">Tipo de Incidencia:</label>
+            <select id="tipo_incidencia" name="tipo_incidencia" required>
+                <option value="software">Software</option>
+                <option value="hardware">Hardware</option>
+                <option value="hardware_software">Hardware y Software</option>
+                <option value="otros">Otros</option>
+            </select>
+
+            <label for="dispositivo">Dispositivo:</label>
+            <select id="dispositivo" name="dispositivo" required>
+                <option value="sobremesa">Sobremesa</option>
+                <option value="portatil">Portátil</option>
+                <option value="tablet">Tablet</option>
+                <option value="otros">Otros</option>
+            </select>
+
+            <label for="nombre_cliente">Nombre del Cliente:</label>
+            <input type="text" id="nombre_cliente" name="nombre_cliente" required>
+
+            <label for="rol_cliente">Rol del Cliente:</label>
+            <select id="rol_cliente" name="rol_cliente" required>
+                <option value="profesores">Profesores</option>
+                <option value="alumnos">Alumnos</option>
+                <option value="otros">Otros</option>
+            </select>
+
+            <button type="submit">Guardar Incidencia</button>
+        </form>
+    </div>
+</body>
+</html>
